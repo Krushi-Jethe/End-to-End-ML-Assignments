@@ -1,32 +1,10 @@
-# Data Analysis
+# Data Analysis & Feature Engineering
 
 
-  The aim of the assignment is to familiarize you with **exploratory data analysis**. Through this assignment you should be able to get a good understanding of how to approach a given problem statement and analyze the data for a given use case.   
-
-  While having good data science skills is important it is also necessary to be able to write clean and self explanatory code which is reusable and follows the PEP-8 coding standards. For code formatting use black formatter and for linting python scripts use pylint. To use black formatter in your notebooks in the first block of code execute `%load_ext jupyter_black`. Formatting and linting of python scripts will be discussed in the upcoming assignments. 
-
-Please use the following template to make your notebook clean:
-```
-# 1. Imports
-
-[1] `%load_ext jupyter_black`
-
-# 2. Data loading and cleaning
-
-# 3. Data Analysis
-
-## 3.1
-### 3.1.1
-### 3.1.2
-
-## 3.2
-
-# Conclusion
-<your conclusion here>
-```
+  The aim of the assignment is to familiarize you with **exploratory data analysis & feature engineering**. Through this assignment you should be able to get a good understanding of how to approach a given problem statement and analyze the data for a given use case.   
 
 
-## Exploration of pandas, matplotlib and seaborn library
+###  📂 Exploration of pandas, matplotlib and seaborn library
 
 *Note: These are just a few commonly used commands. Feel free to explore and try out more as you learn.*
 
@@ -63,6 +41,60 @@ Please use the following template to make your notebook clean:
 - Suggestion: When creating grids say you have to create 23 plots, to create a neat plot flatten the axes and iterate over these to plot since it would be easier to handle one dimension rather than two. Also ensure you delete the last two empty figures. Since the grid would be 5x5 which means 25 figures.
 
 ##### Ipython.display & HTML
-- Try using HTML and display feature to display your tables or any type of content neatly. For example if you have 8 tables to display instead of displaying them one below the other create a 4x4 grid using HTML. Feel free to use AI tools for generating code for you.
+- Try using HTML and display feature to display your tables or any type of content neatly. For example if you have 8 tables to display, instead of displaying them one below the other create a 4x4 grid using HTML. Feel free to use AI tools for generating code for you.
 - Optional: Get familiar with simple html commands `<h1>, <h2>, <code>, <u>, <table> etc.`
 
+---
+### 🎓 Assignment
+  While having good data science skills is important it is also necessary to be able to write clean and self explanatory code which is reusable and follows the PEP-8 coding standards. For code formatting use black formatter and for linting python scripts use pylint. To use black formatter in your notebooks in the first block of code execute `%load_ext jupyter_black`. Formatting and linting of python scripts will be discussed in the upcoming assignments. 
+
+Please use the following template to make your notebook clean:  
+
+**Naming** - All your notebooks should be named in the following format    
+      `[notebook-number]-[first letter of your first name and last name]-[title].ipynb`, E.g., `00-kj-data-analysis.ipynb`.
+
+**Sections within the notebook** (*Feel free to add any sections*)
+```
+# 1. Imports
+
+[1] `%load_ext jupyter_black`
+
+# 2. Data loading and cleaning
+
+# 3. Data Analysis
+
+## 3.1
+### 3.1.1
+### 3.1.2
+
+## 3.2
+
+# Conclusion
+<your conclusion here>
+```
+
+- [ ] Save the dataset assigned to you in `data/raw` directory
+      
+- [ ] Create two notebooks in your notebooks directory which was previously created as a part of your linux assignment and create the sections as metioned above in template.
+
+- [ ] The first notebook contains following analysis:
+  - [ ] Information about the dataset i.e., the null values, unique counts etc.
+  - [ ] Data cleaning
+  - [ ] Statistical Information about numerical variables - mean, median, min, max, % contribution in terms of row counts and aggregate value. Do this for both entire data as well as for categorical variables. For e.g., if you are checking sales data then how the sales data is in different states, quarters, years etc.
+  - [ ] Visualize the distribution of the data
+  - [ ] Perform interval analysis.
+  - [ ] Check how distribution changes over time or with categorical variables, skewness, outliers, data imputation strategies.
+  - [ ] Additional analysis which is your use case specific. This is where you will be showing how well you can dig into the data and extract information
+  - [ ] Display tables/plots neatly
+  - [ ] Write a conclusion in markdown in the end of your notebook.
+  
+- [ ] The second notebook should contain the following:
+  - [ ] Write a function to clean your data.
+    - [ ] Now use this function to obtain your cleaned dataframe.
+
+  - [ ] Create another function which takes the cleaned dataframe and returns a model ready dataframe containing of features and outputs.
+    - [ ] Based on your problem statement research and decide what features can be utilized for training your models.
+    - [ ] Write a function to generate the features and create a dataframe.
+          
+  - [ ] Now use the model ready dataframe and split it into train/val/test split and save it as json and csv file in  the `data/processed` directory.
+  
