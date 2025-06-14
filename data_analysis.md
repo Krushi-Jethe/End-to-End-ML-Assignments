@@ -4,12 +4,12 @@
   The aim of the assignment is to familiarize you with **exploratory data analysis & feature engineering**. Through this assignment you should be able to get a good understanding of how to approach a given problem statement and analyze the data for a given use case.   
 
 
-###  📂 Exploration of pandas, matplotlib and seaborn library
+### 🛠️ Exploration of pandas, matplotlib and seaborn library
 
 *Note: These are just a few commonly used commands. Feel free to explore and try out more as you learn.*
 
-#### Commands to explore
-##### Pandas:
+#### 📂 Commands to explore
+##### 🧰 Pandas:
 - `pd.pivot`
 - `pd.melt`
 - `pd.cut`
@@ -36,11 +36,11 @@
   
 *For more refer [here](https://pandas.pydata.org/docs/reference/index.html)*
 
-##### Matplotlib & Seaborn:
+##### 🧰 Matplotlib & Seaborn:
 - Learn how to make proper graphs by adjusting the settings for colors, linewidth, xticks/yticks, xlabels/ylables, title, creating neat grids
 - Suggestion: When creating grids say you have to create 23 plots, to create a neat plot flatten the axes and iterate over these to plot since it would be easier to handle one dimension rather than two. Also ensure you delete the last two empty figures. Since the grid would be 5x5 which means 25 figures.
 
-##### Ipython.display & HTML
+##### 🧰 Ipython.display & HTML
 - Try using HTML and display feature to display your tables or any type of content neatly. For example if you have 8 tables to display, instead of displaying them one below the other create a 4x4 grid using HTML. Feel free to use AI tools for generating code for you.
 - Optional: Get familiar with simple html commands `<h1>, <h2>, <code>, <u>, <table> etc.`
 
