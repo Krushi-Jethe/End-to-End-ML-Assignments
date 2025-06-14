@@ -9,6 +9,8 @@ The aim of this assignment is to **familiarize yourself with model deployment**.
 
 - [ ] Write a script which accepts requests, loads models and returns predictions for the requests.
 
+<br>      
+
 ### 🖥️	Streamlit App
 
 - [ ] Write scripts for your streamlit app which can do the following:
@@ -18,6 +20,8 @@ The aim of this assignment is to **familiarize yourself with model deployment**.
   - [ ] Display the predictions.
   - [ ] Optional: Provide options for exploring your clean dataset - View tables/plots.
   - [ ] Use `streamlit run Home.py --server.port 5000` to display your app. (You can edit your code and view the changes simultaneously)
+
+<br>      
      
 ### 🏗️ Docker
 
