@@ -35,51 +35,82 @@ Explore their basic functionality along with various useful flags/options, such 
 
   - [ ] Creates a directory structure as given below: 
 
-              ml-project/ 
+              ml-project/                # Root directory
               
-              ├── app/ 
+              ├── app/                   # Module for app
               
-              │   ├── pages/      
+              │   ├── pages/             # Add more scripts in this dir to have tabs in your app
               
-              │   ├── Home.py      
+              │   ├── Home.py            # Home page for your app
               
-              ├── data/                    
+              ├── data/                  # Directory for data
               
-              │   ├── raw/                  
+              │   ├── raw/               # Store raw dataset here           
               
-              │   ├── processed/           
+              │   ├── processed/         # Store your processed data here        
               
-              ├── notebooks/               
+              ├── notebooks/             # Notebooks for exploration
               
-              ├── src/                      
+              ├── src/                   # Module for pipeline
               
-              │   ├── data/                
+              │   ├── data/              # Submodule for data cleaning and processing
+        
+              │       ├── __init__.py    # added to treat it as package
+        
+              │       ├── processor.py   # clean your data, prepare data for model training or inference
+        
+              │       ├── eda_util.py    # utilities for exploratory data analysis         
               
-              │   ├── features/         
+              │   ├── models/            # Submodule for model training and inference
+        
+              │       ├── __init__.py    # added to treat it as package
+        
+              │       ├── trainer.py     # train models on your dataset
               
-              │   ├── models/        
+              │       ├── inference.py   # load trained models and perform inference for your use case
               
-              │   ├── visualization/     
-              
-              │   └── utils/               
-              
-              ├── models/                         
-              
-              ├── tests/                    
-              
-              ├── Dockerfile                
-              
-              ├── requirements.txt          
-              
-              ├── setup.py                  
-              
-              ├── README.md            
-              
-              └── .gitignore   
+              │   ├── visualization/     # Submodule for visualization
 
-   - [ ] Install anaconda in your WSL, create a conda environment named ml-project and install requirements.txt in the environment. 
+              │       ├── __init__.py    # added to treat it as package
+           
+              │   └── utils/             # Submodule for utilities
+        
+              │       ├── __init__.py    # added to treat it as package
+        
+              │   ├── __init__.py        # added to treat it as package
+        
+              │   ├── main.py            # Running this should trigger pipeline to load data, process it, train models and save them             
+              
+              ├── models/                # Save your trained models here     
+              
+              ├── test/                  # pytests
+        
+              ├── create_environment.sh  # Refer below for the purpose of this script                
+              
+              ├── Dockerfile             # To be used to create docker image
+              
+              ├── requirements.txt       # Requirements for environment
+              
+              ├── setup.py               # Package dev
+              
+              ├── README.md              # Info about repo, how to use
+              
+              └── .gitignore             # files to ignore when pushing code to github
+        
+    - [ ] Add the following libraries to requirements.txt
+      - [ ] scikit-learn
+      - [ ] pandas
+      - [ ] numpy
+      - [ ] matplotlib
+      - [ ] seaborn
+      - [ ] dill
+  - [ ] In the Home.py script add `# pylint: disable=invalid-name` 
 
- 
-- [ ] Write a shell script which downloads the data, unzip the file, rename it and pass it through a python script to process it and save it. After the script is run you should have two CSVs generated and stored under a folder – original and processed. 
+
+- [ ] In the above `create_environment.sh` script update it to do the following:
+  - [ ] Install anaconda (only if it is already not present - use an if clause), create a conda environment named ml-project.
+  - [ ] Activate the environment.
+  - [ ] Install requirements.txt in the environment.
+  - [ ] Install jupyter kernel for your environment to use it in notebooks .
 
  
