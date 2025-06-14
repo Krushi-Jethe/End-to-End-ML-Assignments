@@ -98,6 +98,8 @@ Explore their basic functionality along with various useful flags/options, such 
               └── .gitignore             # files to ignore when pushing code to github
         
     - [ ] Add the following libraries to requirements.txt
+      - [ ] black
+      - [ ] pylint
       - [ ] scikit-learn
       - [ ] pandas
       - [ ] numpy
