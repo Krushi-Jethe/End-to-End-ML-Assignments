@@ -31,7 +31,7 @@ Explore their basic functionality along with various useful flags/options, such 
 ---
 ### 🎓 Assignment
 
-- [ ] Write a shell script which does the following: 
+- [ ] Write a shell script `project_template.sh` which does the following: 
 
   - [ ] Creates a directory structure as given below: 
 
