@@ -1,9 +1,9 @@
 # Data Analysis
 
 
-The aim of the assignment is to familiarize you with exploratory data analysis. Through this assignment you should be able to get a good understanding of how to approach a given problem statement and analyze the data for a given use case.   
+  The aim of the assignment is to familiarize you with exploratory data analysis. Through this assignment you should be able to get a good understanding of how to approach a given problem statement and analyze the data for a given use case.   
 
-While having good data science skills is important it is also necessary to be able to write clean and self explanatory code which is reusable and follows the PEP-8 coding standards. For code formatting use black formatter and for linting python scripts use pylint. To use black formatter in your notebooks in the first block of code execute `%load_ext jupyter_black`. Formatting and linting of python scripts will be discussed in the upcoming assignments. 
+  While having good data science skills is important it is also necessary to be able to write clean and self explanatory code which is reusable and follows the PEP-8 coding standards. For code formatting use black formatter and for linting python scripts use pylint. To use black formatter in your notebooks in the first block of code execute `%load_ext jupyter_black`. Formatting and linting of python scripts will be discussed in the upcoming assignments. 
 
 Please use the following template to make your notebook clean:
 ```
