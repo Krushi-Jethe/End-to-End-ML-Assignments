@@ -17,5 +17,5 @@ Cloud deployment is currently out of scope. Future versions of this series will 
 Each stage of the ML lifecycle is broken into practical assignments. Scripts and notebooks help you get comfortable with both **concepts** and **production-level implementation**.
 
 ## Contributing
-Suggestions, improvements, and feature requests are welcome!
-Feel free to open issues or submit pull requests.
+Suggestions and improvements are welcome!
+
