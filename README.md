@@ -9,6 +9,9 @@ This repository provides a **hands-on assignment series** designed to help learn
 - Testing & Packaging
 - Deployment (Docker + FastAPI + Streamlit)
 
+
+Use VSCode + WSL if working on this locally. Additionally you would need to download docker for creating docker image and container.  
+
 Cloud deployment is currently out of scope. Future versions of this series will aim to incorporate AWS-based assignments using the free trial tier, ensuring accessibility without incurring additional costs.
 
 
